@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Center - EMDCorp</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        /* Specific styles for the interactive FAQ */
+        .faq-item { border-bottom: 1px solid var(--border-color); }
+        .faq-item summary { font-size: 1.2rem; font-weight: 600; padding: 1.5rem 0; cursor: pointer; list-style: none; position: relative; }
+        .faq-item summary::-webkit-details-marker { display: none; }
+        .faq-item summary::after { content: '+'; position: absolute; right: 0.5rem; font-size: 1.8rem; font-weight: 300; color: var(--primary-color); transition: transform 0.3s ease; }
+        .faq-item[open] summary::after { transform: rotate(45deg); }
+        .faq-item div { padding: 0 1rem 1.5rem; }
+    </style>
+</head>
+<body>
+
+    <header class="header scrolled">
+        <nav class="navbar">
+            <a href="index.html" class="nav-logo">EMDCorp</a>
+            <ul class="nav-menu">
+                <li><a href="index.html#home" class="nav-link">Home</a></li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="index.html#services" class="nav-link">Services</a></li>
+                <li><a href="index.html#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-wrapper">
+        <div class="page-content">
+            <h1>Help Center</h1>
+            <p>Have questions? We're here to help. Find answers to frequently asked questions below. If you can't find what you're looking for, please don't hesitate to <a href="index.html#contact">contact us</a>.</p>
+
+            <h2>Frequently Asked Questions</h2>
+
+            <details class="faq-item">
+                <summary>What is the typical timeline for a web development project?</summary>
+                <div><p>A standard project takes between 6 to 12 weeks from kickoff to launch. This can vary based on the complexity and scope of the project. We provide a detailed timeline after our initial discovery phase.</p></div>
+            </details>
+
+            <details class="faq-item">
+                <summary>How do you handle project communication and updates?</summary>
+                <div><p>We believe in transparent communication. You will have a dedicated project manager and access to a shared workspace (like Slack or Teams) for real-time updates. We also schedule weekly or bi-weekly check-in meetings to review progress and gather feedback.</p></div>
+            </details>
+
+            <details class="faq-item">
+                <summary>Do you offer post-launch support and maintenance?</summary>
+                <div><p>Yes, we offer a range of ongoing support and maintenance retainers to ensure your website remains secure, up-to-date, and performing optimally. We can tailor a package to fit your specific needs.</p></div>
+            </details>
+
+            <details class="faq-item">
+                <summary>What technologies do you specialize in?</summary>
+                <div><p>Our team is proficient in a modern tech stack including React, Node.js, and TypeScript for web development, Swift and Kotlin for native mobile apps, and Figma for UI/UX design. We select the best technology to meet your project's goals.</p></div>
+            </details>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>EmdCorp</h3>
+                <p>Transforming businesses through innovative digital solutions and cutting-edge technology.</p>
+                <div class="social-icons">
+                    <a href="#"><i data-feather="linkedin"></i></a>
+                    <a href="#"><i data-feather="twitter"></i></a>
+                    <a href="#"><i data-feather="github"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">Mobile Apps</a></li>
+                    <li><a href="#">UI/UX Design</a></li>
+                    <li><a href="#">Cloud Solutions</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="documentation.html">Documentation</a></li>
+                    <li><a href="help-center.html">Help Center</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="terms-of-service.html">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 EmdCorp. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>feather.replace()</script>
+</body>
+</html>
